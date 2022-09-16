@@ -138,7 +138,7 @@ mp_recv(void)
 		    icp->icmp_id == htons(0xdead) &&
 		    bcmp(&mw->recv_from, &mw->send_to, sizeof(mw->recv_from)) == 0) {
 			value = ntohs(ip->ip_id);
-			delta = value - mw->last[0];
+			delta = (int16_t)(value - mw->last[0]);
 			mw->last[0] = value;
 			value = delta - mw->last[1];
 			mw->last[1] = delta;
