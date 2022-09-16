@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Morse Pinger
+Comment=Morse using ping through another IPv4 host
+Exec=MorsePing
+Icon=MorsePing
+Categories=Audio
+Terminal=false
+Type=Application
+
